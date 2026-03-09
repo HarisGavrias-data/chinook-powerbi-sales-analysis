@@ -70,6 +70,7 @@ DISTINCTCOUNT('chinook invoice'[CustomerId])
 
 ## Repository Structure
 
+```
 chinook-powerbi-sales-analysis
 │
 ├── README.md
@@ -87,6 +88,7 @@ chinook-powerbi-sales-analysis
 │
 └── dax
     └── measures.md
+```
 
 ---
 
