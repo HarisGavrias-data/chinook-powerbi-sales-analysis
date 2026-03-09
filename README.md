@@ -1,7 +1,8 @@
 # Chinook Power BI Sales Analysis
 
-Interactive **Power BI dashboard** analyzing music sales using the **Chinook database**.  
-The project focuses on revenue analysis, customer activity, top-performing artists, and geographic sales distribution.
+Interactive **Power BI dashboard** analyzing music sales using the **Chinook database**.
+
+This project explores music sales performance, identifies top-performing artists, analyzes customer distribution, and visualizes revenue across countries.
 
 ---
 
@@ -13,11 +14,9 @@ The project focuses on revenue analysis, customer activity, top-performing artis
 
 ## Project Overview
 
-This project analyzes sales data from the **Chinook Database**, a sample dataset that represents a digital music store.
+This project analyzes sales data from the **Chinook Database**, a sample dataset representing a digital music store.
 
-The dashboard was built using **Power BI** to explore business insights such as revenue trends, top artists, customer distribution, and sales by country.
-
-The goal of this analysis is to demonstrate how business intelligence tools can transform raw transactional data into actionable insights.
+The dashboard was built using **Power BI** to demonstrate how business intelligence tools can transform raw transactional data into meaningful insights.
 
 ---
 
@@ -25,9 +24,9 @@ The goal of this analysis is to demonstrate how business intelligence tools can 
 
 The dashboard tracks the following KPIs:
 
-- **Revenue:** $2.33K  
-- **Total Tracks Sold:** 2240  
-- **Total Customers:** 59  
+- **Revenue:** $2.33K
+- **Total Tracks Sold:** 2240
+- **Total Customers:** 59
 
 ---
 
@@ -43,9 +42,34 @@ Shows revenue trends over time to identify patterns and changes in sales perform
 Visualizes geographic distribution of revenue across different markets.
 
 ### Genre Filter
-Interactive filter that allows users to explore sales performance by music genre.
+Interactive filter allowing users to explore sales performance by genre.
 
 ---
+
+## DAX Measures
+
+### Revenue
+
+revenue =
+SUMX(
+    'chinook invoiceline',
+    'chinook invoiceline'[UnitPrice] * 'chinook invoiceline'[Quantity]
+)
+
+### Total Tracks Sold
+
+Total Tracks Sold =
+SUM('chinook invoiceline'[Quantity])
+
+### Total Customers
+
+total customers =
+DISTINCTCOUNT('chinook invoice'[CustomerId])
+
+---
+
+## Repository Structure
+
 chinook-powerbi-sales-analysis
 │
 ├── README.md
@@ -63,15 +87,38 @@ chinook-powerbi-sales-analysis
 │
 └── dax
     └── measures.md
+
 ---
-## DAX Measures
 
-### Revenue
+## Tools Used
 
-```DAX
-revenue =
-SUMX(
-    'chinook invoiceline',
-    'chinook invoiceline'[UnitPrice] * 'chinook invoiceline'[Quantity]
-)
+- Power BI
+- DAX
+- SQL / SQLite
+- Data Visualization
+- Chinook Sample Database
+
+---
+
+## How to Use
+
+1. Download the `.pbix` file from the **pbix** folder
+2. Open it using **Power BI Desktop**
+3. Connect to the dataset if needed
+4. Explore the interactive dashboard and filters
+
+---
+
+## Dataset
+
+This project uses the **Chinook Database**, a sample database designed to simulate a digital music store.
+
+Tables included:
+
+- Invoices
+- InvoiceLines
+- Artists
+- Albums
+- Tracks
+- Genres
 
