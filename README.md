@@ -1,3 +1,7 @@
+![Power BI](https://img.shields.io/badge/Tool-Power%20BI-yellow)
+![SQL](https://img.shields.io/badge/Language-SQL-blue)
+![DAX](https://img.shields.io/badge/Language-DAX-orange)
+![Data Analysis](https://img.shields.io/badge/Field-Data%20Analytics-green)
 # Chinook Power BI Sales Analysis
 
 Interactive **Power BI dashboard** analyzing music sales using the **Chinook database**.
