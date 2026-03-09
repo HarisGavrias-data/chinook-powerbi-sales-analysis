@@ -124,3 +124,23 @@ Tables included:
 - Tracks
 - Genres
 
+## Business Questions
+
+This dashboard was designed to answer the following business questions:
+
+- Which artists generate the highest revenue?
+- How many tracks have been sold in total?
+- How does revenue change over time?
+- Which countries generate the most sales?
+- How many unique customers purchased music?
+
+---
+
+## Key Insights
+
+- **Iron Maiden and U2 generate the highest revenue**, indicating strong demand for classic rock artists.
+- The **United States represents the largest market**, contributing the majority of total sales.
+- Sales trends show **periodic spikes in revenue**, suggesting seasonal purchasing behavior.
+- A relatively small number of artists generate a **large portion of total revenue**, indicating a concentration of sales among top performers.
+
+
