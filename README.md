@@ -23,7 +23,12 @@ This project analyzes sales data from the **Chinook Database**, a sample dataset
 The dashboard was built using **Power BI** to demonstrate how business intelligence tools can transform raw transactional data into meaningful insights.
 
 ---
+## Data Model
 
+The data model follows a relational structure connecting artists, albums, tracks, invoices, and genres.
+
+![Data Model](docs/images/chinook-data-model.png)
+---
 ## Key Metrics
 
 The dashboard tracks the following KPIs:
