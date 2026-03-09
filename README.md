@@ -88,7 +88,7 @@ chinook-powerbi-sales-analysis
 ├── docs
 │   └── images
 │       └── chinook-dashboard-preview.png
-│
+│       └── chinook-data-model.png  
 ├── data
 │   └── Chinook.db
 │
